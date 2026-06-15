@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="site-title">儿童游戏乐园</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/language.css">
+</head>
+<body>
+    <header class="header">
+        <h1 data-i18n="site-title">儿童游戏乐园</h1>
+        <p class="subtitle" data-i18n="site-subtitle">适合2-12岁儿童的欢乐游戏</p>
+    </header>
+
+    <main class="main-content">
+        <section class="games-container">
+            <a href="games/puzzle.html" class="game-card">
+                <div class="game-icon" data-i18n="game-puzzle">益智游戏</div>
+                <h2 data-i18n="game-puzzle">益智游戏</h2>
+                <p data-i18n="game-puzzle-desc">锻炼思维能力，培养逻辑思考</p>
+                <span class="age-badge" data-i18n="age-2-8">2-8岁</span>
+            </a>
+
+            <a href="games/roleplay.html" class="game-card">
+                <div class="game-icon" data-i18n="game-roleplay">角色扮演</div>
+                <h2 data-i18n="game-roleplay">角色扮演游戏</h2>
+                <p data-i18n="game-roleplay-desc">发挥想象力，体验不同角色</p>
+                <span class="age-badge" data-i18n="age-3-10">3-10岁</span>
+            </a>
+
+            <a href="games/educational.html" class="game-card">
+                <div class="game-icon" data-i18n="game-educational">教学游戏</div>
+                <h2 data-i18n="game-educational">教学游戏</h2>
+                <p data-i18n="game-educational-desc">边玩边学，快乐成长</p>
+                <span class="age-badge" data-i18n="age-2-12">2-12岁</span>
+            </a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p data-i18n="footer-text">儿童游戏乐园 - 寓教于乐</p>
+    </footer>
+
+    <a href="notes.html" class="notes-link" data-i18n="notes-link">课程心得</a>
+
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        document.body.appendChild(createLanguageToggle());
+        updatePageContent();
+    </script>
+</body>
+</html>
